@@ -1,0 +1,15 @@
+Vagrant::Config.run do |config|
+
+    config.vm.box     = "opsschool_centos64_base"
+    config.vm.box_url = "http://toolbox.ny4.etsy.com/~avig/opsschool_centos64_base.box"
+    config.vm.forward_port 80, 8080
+
+    config.vm.provision :chef_solo do |chef|
+        chef.cookbooks_path = "../../chef/cookbooks"
+        chef.roles_path = "../../chef/roles"
+        chef.log_level = :fatal
+
+        chef.add_role "php_mysql_connection_test"
+
+    end
+end

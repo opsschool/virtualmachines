@@ -1,6 +1,6 @@
 <?php
 
-$link = mysql_connect('localhost', 'root', 'Foobarbaz');
+$link = mysql_connect('127.0.0.1', 'root', 'foobarbz');
 if (!$link) {
     die('Something went wrong. Better fix it!');
 }
