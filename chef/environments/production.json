@@ -1,0 +1,17 @@
+{
+  "name": "production",
+  "description": "Used for production VM lessons.",
+  "cookbook_versions": {
+    "apache": "= 0.1.0",
+    "labs": "= 0.1.0",
+    "mysql": "= 0.1.0",
+    "php": "= 0.1.0",
+    "system": "= 0.1.0"
+  },
+  "json_class": "Chef::Environment",
+  "chef_type": "environment",
+  "default_attributes": {
+  },
+  "override_attributes": {
+  }
+}
