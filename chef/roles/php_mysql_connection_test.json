@@ -1,6 +1,6 @@
 {
   "name": "php_mysql_connection_test",
-  "description": "",
+  "description": "PHP/MySQL Connection Test",
   "json_class": "Chef::Role",
   "default_attributes": {
   },
